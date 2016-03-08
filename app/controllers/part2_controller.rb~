@@ -1,0 +1,2 @@
+class Part2Controller < ApplicationController
+end

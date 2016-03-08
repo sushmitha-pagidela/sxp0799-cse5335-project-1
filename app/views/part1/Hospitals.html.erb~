@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title>Hospital List</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <%= csrf_meta_tags %>
+
+<style>
+table, th, td {
+   color:black;
+    border: 1px solid;
+	 font-family: monospace;
+        }
+	body {
+	    font-family: verdana;
+	    font-color: black
+		
+		 }
+	button {
+	       
+			font-family: cursive;
+			font-size: 100%;
+			
+			}
+		
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+<script>
+function locate(latitude,longitude){
+$("#location").attr('src',"https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&zoom=16&size=600x300&maptype=roadmap&markers=color:pink%7Clabel:Y%7C"+latitude+","+longitude);
+$("#location").show();
+}
+$(document).ready(function(){
+$("#location").hide();
+$("#hosptl").hide();
+    $("button").click(function(){
+	        $.get("part2/hosparea", function(data)
+				 
+		{
+		 
+               console.log(data);
+       $("#hosptl").show();
+		 
+	 
+                var locate="";
+				for (var i = 0; i < 15; i++)
+	             {     
+				      console.log(data[i].hospitalname);
+                      var row = $("<tr/>");
+				      $("#hosptl").append(row);
+					  
+					  row.append($("<td>" + data[i].hospitalname + "</td>"));
+					  row.append($("<td>" + data[i].area + "</td>"));
+					  row.append($("<td>" + data[i].beds + "</td>"));
+					  row.append($("<td>" + data[i].estab + "</td>"));	
+                      locate = "<td><button onclick=locate('"+data[i].latitude+"','"+data[i].longitude+"')> MAP </button> </td>";				  
+                            
+				     row.append($(locate)) ;
+				}
+				 
+         
+	 
+		   	
+			
+		});
+		});
+
+		});
+                         
+                      
+
+</script>
+</head>
+
+<body style="background-color:#ffccb3">
+<h2 align="center">HOSPITALS IN TEXAS </h2>
+<button> CLICK ME FOR MAPS </button>
+<br/>
+<br/>
+
+<table id="hosptl" align="center" cellpadding="30">
+<tr>
+
+<th> <b/> HOSPITAL NAME </th>
+<th> <b/> AREA </th>
+<th> <b/> NUMBER OF BEDS </th>
+<th> <b/> ESTABLISHMENT YEAR </th>
+</tr>
+
+</table>
+<img id="location" >
+
+
+</body>
+</html>
+
+			 
+
