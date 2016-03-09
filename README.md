@@ -64,6 +64,16 @@ heroku sharing:add samvaran.rallabandi@mavs.uta.edu -->updated to heroku access:
 
 heroku sharing:add emmons@uta.edu
 
+##References
+1.https://www.youtube.com/watch?v=1d6rnWRb_7k&list=PLDmvslp_VR0xlwr5lAx2PDsZLu7oIOhpX&index=4
+
+2.https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+
+3.https://www.youtube.com/watch?v=4nyzl3pVXp4
+
+4.https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html#Markdownsyntaxguide-Unorderedlist
+
+
 </content>
-  <tabTrigger>readme</tabTrigger>
+  
 </snippet>

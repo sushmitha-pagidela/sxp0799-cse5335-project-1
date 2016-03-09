@@ -38,21 +38,40 @@ Heroku ToolBelt for Ubuntu 14.04 had to be installed to deploy the project to th
 ## f.Ubuntu commands to deploy and run
 * 
 git init
+
 git add .
+
 git commit -m "My Commit"
+
 git remote add origin https://github.com/sushmithapagidela/CSE5335-Project-1.git
+
 git push -u origin master
 
 
 bundle install
+
 heroku login
+
 git clone https://github.com/sushmithapagidela/CSE5335-Project-1.git
+
 heroku create cse5335-sxp0799
+
 git push heroku master
+
 heroku open
+
 heroku sharing:add samvaran.rallabandi@mavs.uta.edu -->updated to heroku access:add email-id
+
 heroku sharing:add emmons@uta.edu
 
+##References
+1.https://www.youtube.com/watch?v=1d6rnWRb_7k&list=PLDmvslp_VR0xlwr5lAx2PDsZLu7oIOhpX&index=4
+
+2.https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+
+3.https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html#Markdownsyntaxguide-Unorderedlist
+
+
 </content>
-  <tabTrigger>readme</tabTrigger>
+  
 </snippet>
