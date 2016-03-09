@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[
+  <content>
 #CSE5335-PROJECT_1
 Ruby on Rails application deployed on Heroku server.
 
@@ -44,6 +44,6 @@ Adds rich user interactivity or AJAX features to the Website.
 +heroku sharing:add samvaran.rallabandi@mavs.uta.edu 
 +heroku sharing:add emmons@uta.edu
 
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
