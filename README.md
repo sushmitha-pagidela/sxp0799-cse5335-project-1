@@ -38,19 +38,30 @@ Heroku ToolBelt for Ubuntu 14.04 had to be installed to deploy the project to th
 ## f.Ubuntu commands to deploy and run
 * 
 git init
+
 git add .
+
 git commit -m "My Commit"
+
 git remote add origin https://github.com/sushmithapagidela/CSE5335-Project-1.git
+
 git push -u origin master
 
 
 bundle install
+
 heroku login
+
 git clone https://github.com/sushmithapagidela/CSE5335-Project-1.git
+
 heroku create cse5335-sxp0799
+
 git push heroku master
+
 heroku open
+
 heroku sharing:add samvaran.rallabandi@mavs.uta.edu -->updated to heroku access:add email-id
+
 heroku sharing:add emmons@uta.edu
 
 </content>
