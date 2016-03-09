@@ -41,7 +41,7 @@ git clone https://github.com/sushmithapagidela/CSE5335-Project-1.git
 heroku create cse5335-sxp0799
 git push heroku master
 heroku open
-heroku sharing:add samvaran.rallabandi@mavs.uta.edu 
+heroku sharing:add samvaran.rallabandi@mavs.uta.edu -->updated to heroku access:add email-id
 heroku sharing:add emmons@uta.edu
 
 </content>
